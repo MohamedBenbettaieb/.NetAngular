@@ -11,7 +11,7 @@ builder.Services.AddDbContext<StoreContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 var app = builder.Build();
-// just testing 
+
 // Configure the HTTP request pipeline.
 
 app.MapControllers();
